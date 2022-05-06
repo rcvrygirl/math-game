@@ -27,5 +27,5 @@ input:focus {
 }
 
 .close {
-    background-color: rgba(255, 235, 60);
+    background-color: rgba(60, 235, 60, 0.3);
 }
