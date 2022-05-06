@@ -9,14 +9,18 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class EquationComponent implements OnInit {
 
   mathForm = new FormGroup({
-    a: new FormControl(''),
-    b: new FormControl(''),
+    a: new FormControl(this.randomNumber()),
+    b: new FormControl(this.randomNumber()),
     answer: new FormControl('')
   })
-  
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  randomNumber() {
+    return Math.floor(Math.random() * 10);
   }
 
 }
